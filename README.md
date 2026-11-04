@@ -1,4 +1,4 @@
-﻿# FreightHub API 🚛
+﻿# FreightHub API 🚛  (Em Desenvolvimento)
 
 <p align="left">
   <img src="https://img.shields.io/badge/.NET_10-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 10" />
