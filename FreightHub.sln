@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.11.12328.437 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
@@ -32,6 +32,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightHub.UnitTests", "tests\FreightHub.UnitTests\FreightHub.UnitTests.csproj", "{D1F1558B-66BA-4082-94B6-D0C3C8BB26C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestrutura", "Infraestrutura", "{E38E6360-F45A-43A4-87E3-E6ABF9DF1BD7}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		.gitignore = .gitignore
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,5 +189,8 @@ Global
 		{C8087BA5-B8E7-47FA-8C67-4258CE676F8B} = {AC2CCB80-5142-0C35-2A91-68AA3AC7E5A7}
 		{32F7040A-4B3C-42E4-9C42-3227240235F4} = {AC2CCB80-5142-0C35-2A91-68AA3AC7E5A7}
 		{D1F1558B-66BA-4082-94B6-D0C3C8BB26C6} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4EF043B-D86B-447D-B688-DAF05B5E3D94}
 	EndGlobalSection
 EndGlobal

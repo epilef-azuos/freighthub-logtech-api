@@ -1,0 +1,29 @@
+name: FreightHub CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 10
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore FreightHub.sln
+
+    - name: Build
+      run: dotnet build FreightHub.sln --no-restore
+
+    - name: Run Unit Tests
+      run: dotnet test FreightHub.sln --no-build --verbosity normal
